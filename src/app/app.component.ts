@@ -1,4 +1,5 @@
-import { SelectAutocompleteComponent } from 'select-autocomplete';
+// import { SelectAutocompleteComponent } from 'select-autocomplete';
+import { SelectAutocompleteComponent } from './../../projects/select-autocomplete/src/lib/select-autocomplete.component';
 import {
   Component,
   ViewChild
@@ -10,7 +11,7 @@ import {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild(SelectAutocompleteComponent) multiSelect: SelectAutocompleteComponent;
+  @ViewChild(SelectAutocompleteComponent, { static: false }) multiSelect: SelectAutocompleteComponent;
 
   options = [
     {
